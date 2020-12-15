@@ -20,10 +20,5 @@ class Node(models.Model):
 
 class Garden(models.Model):
     name = models.CharField(max_length=50)
-    device = models.ForeignKey(
-        Node,
-        null=False,
-        on_delete=models.CASCADE
-    )
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)

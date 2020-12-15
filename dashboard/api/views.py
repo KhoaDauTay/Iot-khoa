@@ -9,5 +9,5 @@ class NodeViewSet(viewsets.ModelViewSet):
 
 
 class GardenViewSet(viewsets.ModelViewSet):
-    queryset = Garden.objects.all().order_by('id')
+    queryset = Garden.objects.all()
     serializer_class = GardenSerializer

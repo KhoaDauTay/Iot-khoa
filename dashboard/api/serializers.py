@@ -16,4 +16,6 @@ class NodeSerializer(serializers.ModelSerializer):
 class GardenSerializer(serializers.ModelSerializer):
     class Meta:
         model = Garden
-        fields = "__all__"
+        fields = [
+            "name"
+        ]
