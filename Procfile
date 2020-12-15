@@ -1,0 +1,1 @@
+web: gunicorn IOT_dashboard.wsgi --log-file -
