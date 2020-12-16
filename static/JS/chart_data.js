@@ -3,7 +3,7 @@ var apikey = document.getElementById('apikey').value ;
 
 
 function getdevice(){
-    var requests = $.get('https://iot-dashboard-khoa.herokuapp.com/'+'api/'+'node/'+apikey+'/');
+    var requests = $.get('https://iot-dashboard-khoa.herokuapp.com/'+'api/'+'node/'+apikey+'');
     var tm = requests.done(function (result){
         var today = new Date();
         var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -24,7 +24,7 @@ function getdevice(){
         }
         couter++;
 
-        setTimeout(getdevice, 10000);
+        setTimeout(getdevice, 2000);
         
     
     });
