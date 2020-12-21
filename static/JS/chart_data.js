@@ -24,7 +24,7 @@ function getdevice(){
         }
         couter++;
 
-        setTimeout(getdevice, 2000);
+        setTimeout(getdevice, 8000);
         
     
     });
